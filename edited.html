@@ -12,14 +12,14 @@
       <b>Easy</b> Meals
     </a>
     <!-- Float links to the right. Hide them on small screens -->
-    <nav class="w3-right w3-hide-small">
+    <nav id="homePage" class="w3-right w3-hide-small">
       <a href="#food" class="w3-bar-item w3-button">Meals</a>
       <a href="#chefs" class="w3-bar-item w3-button">Our Chefs</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </nav>
   </nav>
 
-  <header class="hero">
+  <header class="hero" id="homeHeader">
     <div class="w3-display-container w3-content w3-wide" id="home">
     <div class="w3-display-middle w3-margin-top w3-center hero-title">
       <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min">EASY</span> Meals</h1>
@@ -35,49 +35,53 @@
 
   <!-- Project Section -->
   <main id="main">
+
     <div class="w3-container w3-padding-32 main-title" id="food">
       <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Meal ideas</h2>
     </div>
+
     <div>
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Fruit</div>
+      <figure class="w3-display-container">
+        <figcaption class="w3-display-topleft w3-black w3-padding">Fruit</figcaption> 
         <img src="imgs/eating1.jpg" alt="fruit">
-      </div>
+      </figure>
     </div>
 
     <div>
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Coffee</div>
+      <figure class="w3-display-container">
+        <figcaption class="w3-display-topleft w3-black w3-padding">Coffee</figcaption>
         <img src="imgs/eating2.jpg" alt="coffee">
       </div>
-    </div>
+    </figure>
+
     <div>
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Cheese</div>
+      <figure class="w3-display-container">
+        <figcaption class="w3-display-topleft w3-black w3-padding">Cheese</figcaption>
         <img src="imgs/eating3.jpg" alt="cheese">
-      </div>
+      </figure>
     </div>
 
     <div>
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Goldfish</div>
+      <figure class="w3-display-container">
+        <figcaption class="w3-display-topleft w3-black w3-padding">Goldfish</figcaption>
         <img src="imgs/eating4.jpg" alt="goldfish">
-      </div>
+      </figure>
     </div>
 
     <div>
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Nuts</div>
+      <figure class="w3-display-container">
+        <figcaption class="w3-display-topleft w3-black w3-padding">Nuts</figcaption>
         <img src="imgs/eating5.jpg" alt="nuts">
-      </div>
+      </figure>
     </div>
 
     <div>
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Roast Chicken</div>
+      <figure class="w3-display-container">
+        <figcaption class="w3-display-topleft w3-black w3-padding">Roast Chicken</figcaption>
         <img src="imgs/eating6.jpg" alt="chicken">
-      </div>
+      </figure>
     </div>
+
   </main>
 
   <!-- About Section -->
@@ -89,7 +93,7 @@
     </p>
   </section>
 
-  <aside class="aside-grid">
+  <div class="aside-grid">
     <article>
       <img src="imgs/chef4.jpg" alt="Krainda" class="w3-grayscale">
       <h3 class="chef-name">Karinda Hux</h3>
@@ -118,12 +122,13 @@
       <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
     </article>
     
-  </aside>
+  </div>
 
   <!-- Contact Section -->
   <section class="w3-container w3-padding-32" id="contact">
     <h2 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h2>
     <p>Lets get in touch and talk about your and our next project.</p>
+    
     <form action="/action_page.php" target="_blank">
       <fieldset class="fieldset-flex">
         <label for="name">Name:</label>
